@@ -11,3 +11,12 @@ def on_the_line_calc(point1, point2, x):
     intercept = point1[1] - slope * point1[0]
     y = x * slope + intercept
     return y
+
+# Breaking function down into smaller steps - modular
+
+# Slope calculation from 2 (x,y) points
+def slope_calc(point1, point2)
+    slope_num = point2[1] - point1[1]
+    slope_denom = point2[0] - point1[0]
+    slope = slope_num / slope_denom
+    return slope
