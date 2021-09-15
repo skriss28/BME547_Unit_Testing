@@ -30,3 +30,4 @@ def intercept_calc(point1, point2, slope):
 def y_calc(x, slope, intercept):
     y = x * slope + intercept
     return y
+
