@@ -20,3 +20,7 @@ def slope_calc(point1, point2)
     slope_denom = point2[0] - point1[0]
     slope = slope_num / slope_denom
     return slope
+
+def intercept_calc(point1, point2, slope)
+    intercept = point1[1] - slope * point1[0]
+    return intercept
