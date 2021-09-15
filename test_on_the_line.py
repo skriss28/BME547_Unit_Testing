@@ -25,3 +25,11 @@ def test_intercept_calc(point1, point2, slope, exp_intercept):
     from on_the_line import intercept_calc
     intercept = intercept_calc(point1, point2, slope)
     assert intercept == exp_intercept
+
+# unit test for y-value calculation
+@pytest.mark.parametrize("x, slope, intercept, exp_y", [
+    (3, 1.5, 0.5, 5)])
+def test_y_calc(x, slope, intercept, exp_y):
+    from on_the_line import y_calc
+    y = y_calc(x, slope, intercept)
+    assert y == exp_y
